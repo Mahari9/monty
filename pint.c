@@ -4,8 +4,8 @@
 #include "monty.h"
 
 /**
- * pint - prints the value at the top of the stack, followed by a new line
- * @top: pointer to top of stack
+ * pint - Prints the value at the top of the stack, followed by a new line
+ * @top: Pointer to top of stack
  * @lin_num: Number of line
 */
 void pint(stack_t *top, unsigned int lin_num)

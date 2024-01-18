@@ -17,7 +17,7 @@ void apply_op(stack_t **top, char *opcode, unsigned int lin_num)
 	else if (strcmp(opcode, "sub") == 0)
 		sub(top, lin_num);
 	else if (strcmp(opcode, "div") == 0)
-		div(top, lin_num);
+		stack_div(top, lin_num);
 	else if (strcmp(opcode, "mul") == 0)
 		mul(top, lin_num);
 	else if (strcmp(opcode, "mod") == 0)
@@ -41,7 +41,7 @@ void apply_op(stack_t **top, char *opcode, unsigned int lin_num)
 	else
 	{
 		fprintf(stderr, "L%u: unknown instruction %s\n", lin_num, opcode);
-		free_stack(*top);
+		free_opcod(*top);
 		exit(EXIT_FAILURE);
 	}
 }

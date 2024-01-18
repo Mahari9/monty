@@ -44,7 +44,7 @@ void swap(stack_t **top, unsigned int lin_num);
 void add(stack_t **top, unsigned int lin_num);
 void nop(stack_t **top, unsigned int lin_num);
 void sub(stack_t **top, unsigned int lin_num);
-void div(stack_t **top, unsigned int lin_num);
+void stack_div(stack_t **top, unsigned int lin_num);
 void mul(stack_t **top, unsigned int lin_num);
 void mod(stack_t **top, unsigned int lin_num);
 void pchar(stack_t **top, unsigned int lin_num);

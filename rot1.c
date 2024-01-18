@@ -4,7 +4,7 @@
 #include "monty.h"
 
 /**
- * rotl - Rotates the stack to the top
+ * rotl - Rotates the stack from to bottom to the top
  * @top: Double pointer to the top of stack
  */
 void rotl(stack_t **top)

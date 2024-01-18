@@ -1,3 +1,5 @@
+#include "monty.h"
+
 /**
  * main - entry point to monty code interpreter
  * @argc: argument counter

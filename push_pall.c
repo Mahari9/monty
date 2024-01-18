@@ -20,7 +20,8 @@ void push(stack_t **top, int data)
 }
 
 /**
- * pall - Prints all the values on the stack, starting from the top of the stack
+ * pall - Prints all the values on the stack
+ * starting from the top of the stack
  * @top: Pointer to the top of stack
  */
 void pall(const stack_t *top)

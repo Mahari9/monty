@@ -5,7 +5,7 @@
 
 /**
  * nop - No operation performed
- * @top: Pointer to the top of a stack
+ * @top: Double pointer to the top of a stack
  * @lin_num: Number of line current
  */
 void nop(stack_t **top, unsigned int lin_num)

@@ -2,7 +2,7 @@
 
 /**
  * apply_op - Handle the execution of different opcodes
- * @opcode: Opcode to be applied
+ * @opcode: Opcode to be executed
  * @top: Double pointer to the top of stack
  * @lin_num: Number of line
  */

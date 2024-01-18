@@ -34,26 +34,29 @@ typedef struct instruction_s
 	char *opcode;
 	void (*f)(stack_t **stack, unsigned int line_number);
 } instruction_t;
+
+int main(int argc, char **argv);
+void push(stack_t **top, int data);
+void pall(const stack_t *top);
+void pint(stack_t *top, unsigned int lin_num);
+void pop(stack_t **top, unsigned int lin_num);
+void swap(stack_t **top, unsigned int lin_num);
+void add(stack_t **top, unsigned int lin_num);
+void nop(stack_t **top, unsigned int lin_num);
+void sub(stack_t **top, unsigned int lin_num);
+void div(stack_t **top, unsigned int lin_num);
+void mul(stack_t **top, unsigned int lin_num);
+void mod(stack_t **top, unsigned int lin_num);
+void pchar(stack_t **top, unsigned int lin_num);
+void pstr(stack_t **top);
+void rotl(stack_t **top);
+void rotr(stack_t **top);
+void opcodes(stack_t **ptr, char *opcode, unsigned int lin_num);
+int valid_int(const char *str);
+void enqueue(stack_t **rear, int n);
+void free_opcod(stack_t *top);
+void apply_op(stack_t **top, char *opcode, unsigned int lin_num);
+
 int FIFO;
-int valid_num(const char *str);
-void free_stack(stack_t *head);
-void mod(stack_t **head, unsigned int ln);
-void mul(stack_t **head, unsigned int ln);
-void pint(stack_t *head, unsigned int ln);
-void pchar(stack_t **head, unsigned int ln);
-void pstr(stack_t **head);
-void pop(stack_t **head, unsigned int ln);
-void print_all(const stack_t *h);
-void push(int num, stack_t **head);
-void handle_opcode(stack_t **head, char *opcode, unsigned int ln);
-void stack_div(stack_t **head, unsigned int ln);
-void sub(stack_t **head, unsigned int ln);
-void enqueue(int n, stack_t **head);
-void add(stack_t **stk, unsigned int l);
-void swap(stack_t **stk, unsigned int l);
-void nop(void);
-void rotl(stack_t **stk);
-void rotr(stack_t **stk);
-void execute_op(stack_t **head, char *opcode, unsigned int ln);
 
 #endif /* MONTY_H */

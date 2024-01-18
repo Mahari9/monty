@@ -3,7 +3,7 @@
 /**
  * pstr - Prints the string starting at the top of the stack
  * followed by a new line
- * @top: Pointer to the top of stack
+ * @top: Double pointer to the top of stack
  */
 void pstr(stack_t **top)
 {

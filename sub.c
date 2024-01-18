@@ -6,7 +6,7 @@
 /**
  * sub - Subtracts the top element of the stack
  * from the second top element of the stack
- * @top: pointer to top of stack
+ * @top: Double pointer to top of stack
  * @lin_num: Number of line
 */
 void sub(stack_t **top, unsigned int lin_num)

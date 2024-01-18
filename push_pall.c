@@ -1,11 +1,11 @@
 #include "monty.h"
 
 /**
- * push - push an element to top of stack
- * @head: pointer to beginning of stack
- * @data: integeral data to be added to stack
+ * push - Push an element to top of stack
+ * @top: Double pointer to the top of stack
+ * @data: Integeral data to be added to stack
  */
-void push(stack_t **head, int data)
+void push(stack_t **top, int data)
 {
 	stack_t *stack = malloc(sizeof(stack_t));
 
@@ -15,13 +15,13 @@ void push(stack_t **head, int data)
 		exit(EXIT_FAILURE);
 	}
 	stack->n = data;
-	stack->next = *head;
-	*head = stack;
+	stack->next = *top;
+	*top = stack;
 }
 
 /**
- * pall - prints all the values on the stack, starting from the top of the stack
- * @top: pointer to the top of stack
+ * pall - Prints all the values on the stack, starting from the top of the stack
+ * @top: Pointer to the top of stack
  */
 void pall(const stack_t *top)
 {

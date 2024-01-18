@@ -3,7 +3,7 @@
 /**
  * mod - The rest of the division of the second top element of the stack
  * by the top element of the stack
- * @top: Pointer to the top of stack
+ * @top: Double pointer to the top of stack
  * @lin_num: Number of line
  */
 void mod(stack_t **top, unsigned int lin_num)

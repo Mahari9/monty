@@ -3,7 +3,7 @@
 /**
  * opcodes - Implement the stack and queue opcodes
  * @ptr: Double pointer to top of stack || front of queue
- * @opcode: Eiether stack or queue
+ * @opcode: Eiether stack or queue opcode
  * @lin_num: Number of line
  * Return: Nothing
  */

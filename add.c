@@ -5,12 +5,12 @@
 
 /**
  * add - Add the top two elements of the stack
- * @top: Pointer to the top of stack
+ * @top: Double pointer to the top of stack
  * @lin_num: Number of line
  */
 void add(stack_t **top, unsigned int lin_num)
 {
-	stack_t *tmp;
+	stack_t *temp;
 
 	if (!top || !(*top) || !(*top)->next)
 	{
@@ -18,7 +18,7 @@ void add(stack_t **top, unsigned int lin_num)
 		exit(EXIT_FAILURE);
 	}
 
-	tmp = *top;
-	tmp->next->n += tmp->n;
+	temp = *top;
+	temp->next->n += temp->n;
 	pop(top, lin_num);
 }

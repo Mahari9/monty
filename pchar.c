@@ -2,7 +2,7 @@
 
 /**
  * pchar - Prints the char at the top of the stack, followed by a new line
- * @top: pointer to the top of stack
+ * @top: Double pointer to the top of stack
  * @lin_num: Number of line
  */
 void pchar(stack_t **top, unsigned int lin_num)

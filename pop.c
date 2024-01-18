@@ -5,7 +5,7 @@
 
 /**
  * pop - Removes the top element of the stack
- * @top: Pointer to top of stack
+ * @top: Double pointer to top of stack
  * @lin_num: Number of line
 */
 void pop(stack_t **top, unsigned int lin_num)
